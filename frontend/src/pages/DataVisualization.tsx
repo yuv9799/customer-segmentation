@@ -56,7 +56,7 @@ export default function DataVisualization() {
                   fill="none"
                   stroke="url(#gradient)"
                   strokeWidth="3"
-                  points={elbowData.k_values.map((k, i) => {
+                  points={elbowData.k_values.map((_k, i) => {
                     const x = 50 + (i * 500 / (elbowData.k_values.length - 1))
                     const maxWcss = Math.max(...elbowData.wcss)
                     const minWcss = Math.min(...elbowData.wcss)
@@ -226,7 +226,7 @@ export default function DataVisualization() {
           <h3 className="text-lg font-bold text-gray-900 mb-4">Income Levels</h3>
           <div className="space-y-2">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-600">Low (<40k)</span>
+              <span className="text-gray-600">{'Low (<40k)'}</span>
               <div className="flex-1 mx-3 bg-gray-200 rounded-full h-2">
                 <div className="bg-yellow-500 h-2 rounded-full" style={{ width: '30%' }}></div>
               </div>
@@ -240,7 +240,7 @@ export default function DataVisualization() {
               <span className="font-semibold">50%</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-gray-600">High (>80k)</span>
+              <span className="text-gray-600">{'High (>80k)'}</span>
               <div className="flex-1 mx-3 bg-gray-200 rounded-full h-2">
                 <div className="bg-red-500 h-2 rounded-full" style={{ width: '20%' }}></div>
               </div>

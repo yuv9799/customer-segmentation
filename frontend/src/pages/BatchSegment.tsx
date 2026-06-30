@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { batchSegment } from '../services/api'
 import { 
-  UserGroupIcon,
-  ClipboardDocumentIcon,
-  TableCellsIcon 
+  UserGroupIcon
 } from '@heroicons/react/24/outline'
 
 interface CustomerInput {
